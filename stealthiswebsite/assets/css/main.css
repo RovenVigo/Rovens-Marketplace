@@ -4147,3 +4147,8 @@ input, select, textarea {
 		}
 
 	}
+.subbed {
+	color: black;
+	display: flex;
+	justify-content: center;
+}
