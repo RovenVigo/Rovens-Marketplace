@@ -6,6 +6,7 @@
 -->
 <html>
 	<head>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
 		<title>Fractal by HTML5 UP</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
@@ -430,18 +431,26 @@ print 'It took ' + i + ' iterations to sort the deck.';</code></pre>
 			<script src="assets/js/main.js"></script>
 
 			<!-- Begin Mailchimp Signup Form -->
-<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
-<div id="mc_embed_signup">
-<form action="https://gmail.us18.list-manage.com/subscribe/post?u=e88bdd7f22ca253be9967934f&amp;id=923347bc07" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div id="mc_embed_signup_scroll">
-	<label for="mce-EMAIL">Subscribe</label>
-	<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
-    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e88bdd7f22ca253be9967934f_923347bc07" tabindex="-1" value=""></div>
-    <div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
-    </div>
-</form>
-</div>
+		<link href="//cdn-images.mailchimp.com/embedcode/slim-10_7.css" rel="stylesheet" type="text/css">
+		<div id="mc_embed_signup">
+		<form action="https://gmail.us18.list-manage.com/subscribe/post?u=e88bdd7f22ca253be9967934f&amp;id=923347bc07" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+   		 	<div id="mc_embed_signup_scroll">
+			<label for="mce-EMAIL">Subscribe</label>
+			<input type="email" value="" name="EMAIL" class="email" id="mce-EMAIL" placeholder="email address" required>
+    			<!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
+    			<div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text" name="b_e88bdd7f22ca253be9967934f_923347bc07" tabindex="-1" value=""></div>
+    			<div class="clear"><input type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe" class="button"></div>
+    			</div>
+		</form>
+		</div>
+	<div class="subbed">Thanks for subscribing!</div>
+			<script>
+				$(".subbed").hide();
+				$(".clear").click(function(){
+					$("#mc_embed_signup").hide();
+					$(".subbed").show();
+				});	
+			</script>
 
 <!--End mc_embed_signup-->
 
